@@ -11,12 +11,12 @@ def f_prime(x,dx):
     return y
 
 dx = [1,0.5,0.1]
-x = np.arange(-2,2+1,1)
-fPrime = []
+
 
 for n in range(len(dx)):
-    
-    for i in x:
+    x = np.arange(-2,2+dx[n],dx[n])
+    fPrime = []
+    for i in range(len(x)):
         fP = f_prime(x[i],dx[n])
         fPrime.append(fP)
 
