@@ -64,14 +64,16 @@ ExFig = pp.contourf(X,Y,Ex,levels=mylevels,cmap='twilight')
 pp.xlabel('x position (m)')
 pp.ylabel('y position (m)')
 colorbar = pp.colorbar(ExFig, label='E_x (N/C)')
-pp.show()
+pp.savefig('efieldX.png')
+#pp.show()
 
 pp.figure()
 EyFig = pp.contourf(X,Y,Ey,levels=mylevels,cmap='RdBu')
 pp.xlabel('x position (m)')
 pp.ylabel('y position (m)')
 colorbar = pp.colorbar(EyFig, label='E_y (N/C)')
-pp.show()
+pp.savefig('efieldY.png')
+#pp.show()
 
 
 """ pp.figure()
